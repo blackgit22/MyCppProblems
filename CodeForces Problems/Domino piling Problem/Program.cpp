@@ -1,14 +1,16 @@
 ﻿#include <iostream>
 using namespace std;
-int main() {
-
+int main()
+{
+	
 	int m, n, area, domino_num;
 
 	cin >> m >> n;
 
 	area = n * m;
 
-	if (area % 2 != 0) {
+	if (area % 2 != 0)
+	{
 		area = area - 1;
 	}
 
@@ -16,5 +18,6 @@ int main() {
 
 	cout << domino_num;
 
-	//https://codeforces.com/contest/50/problem/A
+	
 }
+//https://codeforces.com/contest/50/problem/A
