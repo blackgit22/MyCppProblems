@@ -1,35 +1,57 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int ca(string a, string b);
+string separator(string x, int y);
 
 int main()
 {
-    int n, k, f = 0;
-    string name[2000], alpha[2000];
+    int n, k, counter = 0, counter2 = 0, counter3 = 0;
     cin >> n >> k;
+    string name[n], alpha[n];
     for (int i = 0; i < n; i++)
     {
         cin >> name[i];
     }
-    for (int i = 1; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        if (ca(name[0], name[i]) >= k)
+        for (int j = 0; j <= counter; j++)
         {
+            if (separator(name[i], k) == alpha[j])
+            {
+                counter2++;
+            }
         }
+        if (counter2 == 0)
+        {
+            alpha[counter] = separator(name[i], k);
+            counter++;
+        }
+        counter2 = 0;
     }
+    for (int i = 0; i < counter; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (separator(name[j], k) == alpha[i])
+            {
+                counter2++;
+            }
+        }
+        if (counter3 < counter2)
+        {
+            counter3 = counter2;
+        }
+        counter2 = 0;
+    }
+    cout << counter3;
+    return 0;
 }
-
-int ca(string a, string b)
+string separator(string x, int y)
 {
-    int counter = 0;
-    for (int i = 0; i < a.size() && i < b.size(); i++)
+    string a = "";
+    for (int i = 0; i < y; i++)
     {
-        if (a[i] != b[i])
-        {
-            break;
-        }
-        counter++;
+        a += x[i];
     }
-    return counter;
+    return a;
 }
