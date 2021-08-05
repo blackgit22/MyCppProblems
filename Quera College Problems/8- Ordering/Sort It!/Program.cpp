@@ -64,3 +64,4 @@ void insertion_sort(int a[], int x)
     }
 }
 //naaaam baby!!
+//https://quera.ir/college/2572/chapter/7175/lesson/24434/?comments_page=1&comments_filter=ALL&submissions_page=1

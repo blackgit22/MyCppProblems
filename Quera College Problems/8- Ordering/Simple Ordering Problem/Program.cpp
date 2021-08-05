@@ -27,3 +27,4 @@ int main()
         cout << num[i] << " ";
     }
 }
+//https://quera.ir/college/2572/chapter/7175/lesson/34048/?comments_page=1&comments_filter=ALL&submissions_page=1
