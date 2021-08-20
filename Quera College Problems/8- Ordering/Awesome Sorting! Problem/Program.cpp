@@ -81,3 +81,4 @@ void sports_bubble_sort(string names[], int scores[], int sports[], int x, int k
         }
     }
 }
+//https://quera.ir/college/2572/chapter/7175/lesson/34045/
