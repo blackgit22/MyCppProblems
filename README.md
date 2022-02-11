@@ -1,2 +1,2 @@
 # MyCppProblems
-Just solving some c++ problems and prepare myself for IOI
+Just solving some c++ problems and prepare myself for life?
