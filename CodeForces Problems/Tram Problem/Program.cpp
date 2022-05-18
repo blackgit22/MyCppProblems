@@ -17,3 +17,4 @@ int main()
     }
     std::cout << maxi;
 }
+// https://codeforces.com/problemset/problem/116/A

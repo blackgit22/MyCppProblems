@@ -48,3 +48,4 @@ int main()
     }
     std::cout << efficiency;
 }
+// https://codeforces.com/problemset/problem/144/A

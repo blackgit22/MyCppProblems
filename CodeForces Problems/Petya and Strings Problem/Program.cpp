@@ -32,3 +32,4 @@ int main()
     }
     std::cout << 0;
 }
+// https://codeforces.com/problemset/problem/112/A
